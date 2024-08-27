@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+
+    height: 100%;
+
+    background-color:#E9ECF8;
+}
+img{
+
+    max-width: 100%;
+}
+
+header{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+h1{
+font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: darkblue
+}
+
+#alura-logo{
+    margin: 30px;
+    margin-left: 0;
+}
+
+::selection{
+    background: darkblue;
+    color: white
+}
+
+#main{
+
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+.texto-encriptar{
+
+    margin-top: 10%;
+}
+ 
+#texto-entrada{
+   
+    width: 660px;
+    height: 400px;
+    font-weight: 400;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    background: transparent;
+    border: solid 1px transparent;
+    border-radius: 15px;
+    resize: none;
+}
+
+#mensaje-minusculas{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: smaller;
+
+}
+
+#mensaje-minusculas img{
+    width: 16px;
+    height:16px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+.botones button {
+    width: 300px;
+    height: 70px;
+    border: solid 1px darkblue;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    
+    }
+
+ #B-encriptar{
+
+    background-color: darkblue;
+ } 
+ 
+ #B-desencriptar{
+
+    background-color: #D8DFE8;
+    color: darkblue
+ }
+
+ #B-copiar{
+
+    width: 300px;
+    height: 70px;
+    border: solid 1px darkblue;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+    background-color: white;
+    color: darkblue;
+    position: absolute;
+    bottom: 10%;
+    visibility: hidden;
+    cursor: pointer;
+    
+    
+ }
+
+ #B-copiar:hover, #B-desencriptar:hover, #B-encriptar:hover{
+    transform: scale(0.97);
+ }
+
+ .texto-resuelto{
+    height: 750px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    box-shadow: 0px 7px 21px 1px rgba(89,88,89,0.2);
+}
+
+#texto-resultado{
+
+    
+    position: absolute;
+    height: 500px;
+    font-weight: 400;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    background: transparent;
+    border: solid 1px transparent;
+    border-radius: 15px;
+    resize: none;
+
+
+   
+    
+}
+
+#muñeco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+ }
+
+ #ningun-mensaje{
+
+    font-weight: 600;
+    font-size: larger;
+ }
+
+ footer{
+    
+    margin: 2%;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: darkblue;
+ }
+
+
+ @media (max-width: 850px) {
+
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #muñeco img{
+        display: none;
+    }  
+    
+    .texto-resuelto{
+        width: 700px;
+        height: 300px;
+        
+    }
+  
+    #texto-resultado{
+        width: 600px;
+        height: 200px;
+    }
+    #B-copiar{
+
+        position: inherit;
+        margin-top: 130px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .botones{
+        flex-direction: column;
+    }
+    #alura-logo{
+
+        margin: 15px;
+        margin-left: 0;
+
+    
+    }
+    .texto-encriptar{
+
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #texto-entrada{
+
+        width: 400px;
+        height: 300px;
+       
+    }
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #muñeco img{
+        display: none;
+    }  
+    
+    .texto-resuelto{
+        width: 350px;
+        height: 300px;
+        
+    }
+    #texto-resultado{
+        width: 300px;
+        height: 200px;
+    }
+    #B-copiar{
+
+        position: inherit;
+        margin-top: 130px;
+    }
+  }
+
+    
+ 
